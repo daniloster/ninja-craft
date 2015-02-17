@@ -1,0 +1,386 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"wi",
+				"withId"
+			],
+			[
+				"projec",
+				"projectId"
+			],
+			[
+				"totalS",
+				"totalStories"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"user",
+				"userRoles"
+			],
+			[
+				"ng-h",
+				"ng-href	AngularJS"
+			],
+			[
+				"border-top",
+				"border-top-width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"dependenc",
+				"dependenciesToLoad"
+			],
+			[
+				"home",
+				"homeCtrl"
+			],
+			[
+				"json",
+				"jsonResponse"
+			],
+			[
+				"key",
+				"keyPassword"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"tem",
+				"templatePath"
+			],
+			[
+				"proje",
+				"projectSvc"
+			],
+			[
+				"dash",
+				"dashboardCtrl"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"angular",
+				"angular: $animate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Angu",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"An",
+				"Set Syntax: HTML (Angular.js)"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Danilo/Documents/Projects/NodeJS/experiences/ninja-craft"
+	],
+	"file_history":
+	[
+		"/Users/Danilo/Documents/Projects/NodeJS/experiences/ninja-craft/ninja-craft.sublime-workspace",
+		"/Users/Danilo/Documents/Projects/NodeJS/experiences/ninja-craft/ninja-craft.sublime-project",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/main.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/view/template-smart.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/project/projectCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/dashboard.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/project-form.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/util.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/dashboard/dashboardCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/stylesheets/template-smart/template-smart.css",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/stylesheets/template-smart/app.css",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/service/DashboardService.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/util/notificationCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/dashboard.py",
+		"/Users/Danilo/Desktop/test.html",
+		"/Users/Danilo/Desktop/main.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/dashboard/dashboardSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/user/accountCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/login.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Message.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/index.yaml",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/EventLog.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/service/AccountManagementService.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/common/util/__init__.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/account/createAccount.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Member.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/project/projectSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/auth/roles.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/account/login.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/auth/session.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/createAccount.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/User.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Task.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Project.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Sprint.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/entity/Story.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/resolve.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/changePasswordByUser.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/auth/userCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/user/userSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/project-view.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/not-authorized.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/changePassword.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/home/homeCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/user/userCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/404.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/captcha/captchaSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/captcha/captchaCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/components/pagination/paginationDct.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/main.js",
+		"/Users/Danilo/Downloads/pilot-mvc5-angular-lazy-load-master/PilotMvc/Content/Scripts/util.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/user/session.js",
+		"/Users/Danilo/Downloads/pilot-mvc5-angular-lazy-load-master/PilotMvc/Content/Scripts/app.js",
+		"/Users/Danilo/Downloads/pilot-mvc5-angular-lazy-load-master/PilotMvc/Content/Scripts/main.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/util/loadingCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/common/util/TemplateComposerHTML.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/model/service/CaptchaService.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/resolveDependencies.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/account/changePasswordByUser.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/account/changePassword.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/stylesheets/template/template.css",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/view/menu.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/controller/account/logout.py",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/partial-views/error.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/view/login.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/view/dashboard.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/view/error.html",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/stylesheets/template-smart/pure.css",
+		"/Users/Danilo/Documents/Projects/Csharp/PilotMvc/PilotMvc/Views/LoadingPanel.cshtml",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/member/memberSvc.js",
+		"/Users/Danilo/Documents/Projects/Csharp/PilotMvc/PilotMvc/Views/SkeletonLayout.cshtml",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/util/api.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/contact/contactCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/controller/xhrCtrl.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/backup/service/dashboard.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/service/services.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/service/projectSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/service/memberSvc.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/util/logger.js",
+		"/Users/Danilo/Documents/Projects/GAE/agiledeveloping/static/javascript/app/util/event.js",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-js-completions.sublime-settings",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-completions.sublime-settings",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Danilo/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"ninja-craft.sublime-workspace",
+			"notificationCtrl.js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tile-maps",
+			"let ",
+			"count",
+			"pure-button",
+			"angular",
+			"animation",
+			"transform",
+			"trans",
+			"timeline-panel",
+			"timeline-bad",
+			"count",
+			"pure-button",
+			"button",
+			"check",
+			"info",
+			"isLogged",
+			"margin",
+			"Layout",
+			"$rootScope",
+			"sidebar",
+			"requer",
+			"main-content",
+			"float:left",
+			"content-image",
+			"50px",
+			"ul",
+			"form-li",
+			"success",
+			"main-content",
+			"pure-1-",
+			"pure-1-6",
+			"#nav",
+			"sidebar",
+			"this",
+			"sidebar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ninja-craft",
+			"var "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ninja-craft.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

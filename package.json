@@ -1,0 +1,15 @@
+{
+  "name": "tile-maps",
+  "description": "An app to create tile maps",
+  "subdomain": "daniloster.tile-maps",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.36"
+  },
+  "dependencies": {
+    "express.io": "*"
+  }
+}
