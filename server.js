@@ -15,27 +15,32 @@ app.io.configure(function() {
 
 // Send the script files
 app.get('/js/(*/?)*', function(req, res) {
-    res.sendfile(__dirname + req.path.replace('/js/', '/scripts/'))
+    res.sendfile(__dirname + req.path.replace('/js/', '/client/scripts/'))
 });
 
 // Send the style sheet files
 app.get('/css/(*/?)*', function(req, res) {
-    res.sendfile(__dirname + req.path.replace('/css/', '/stylesheets/'))
+    res.sendfile(__dirname + req.path.replace('/css/', '/client/stylesheets/'))
 });
 
 // Send the images
 app.get('/img/(*/?)*', function(req, res) {
-    res.sendfile(__dirname + req.path.replace('/img/', '/images/'))
+    res.sendfile(__dirname + req.path.replace('/img/', '/client/images/'))
 });
 
-// Send the template html.
-app.get('/', function(req, res) {
-    res.sendfile(__dirname + '/views/template.html')
+// Send the images
+app.get('/sprites/(*/?)*', function(req, res) {
+    res.sendfile(__dirname + req.path.replace('/sprites/', '/client/sprites/'))
 });
 
 // Send the partials html.
 app.get('/partials/(*/?)*', function(req, res) {
-    res.sendfile(__dirname + req.path.replace('/partials/', '/views/') + '.html')
+    res.sendfile(__dirname + req.path.replace('/partials/', '/client/views/') + '.html')
+});
+
+// Send the template html.
+app.get('/', function(req, res) {
+    res.sendfile(__dirname + '/client/views/template.html')
 });
 
 
