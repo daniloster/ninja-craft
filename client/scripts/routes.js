@@ -5,7 +5,7 @@
                 .when("/", { templateUrl: '/partials/blackboard', 
                     resolve: resolve([
                     	'app/board/blackboardController',
-                    	'components/common/gameStage/stage'
+                    	'components/game/stage/stage'
                 	], 
                     [roles.Admin, roles.Member, roles.Guest]) })
                 .otherwise({ redirectTo: '/' });
