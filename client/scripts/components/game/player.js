@@ -8,29 +8,29 @@
                 var p = {
                     position: { x: 35, y: 35 },
                     actions: {
-                        MoveUp: {
+                        '37': { // MoveLeft
+                            id: 'left',
+                            xAxisDelta: -150,
+                            yAxisDelta: 0,
+                            keyCode: 37
+                        },
+                        '38': { // MoveUp
                             id: 'up',
                             xAxisDelta: 0,
                             yAxisDelta: -150,
                             keyCode: 38
                         },
-                        MoveRight: {
+                        '39': { // MoveRight
                             id: 'right',
                             xAxisDelta: 150,
                             yAxisDelta: 0,
                             keyCode: 39
                         },
-                        MoveDown: {
+                        '40': { //MoveDown
                             id: 'down',
                             xAxisDelta: 0,
                             yAxisDelta: 150,
                             keyCode: 40
-                        },
-                        MoveLeft: {
-                            id: 'left',
-                            xAxisDelta: -150,
-                            yAxisDelta: 0,
-                            keyCode: 37
                         },
                         None: {
                             id: 'lookAtDown',
@@ -38,30 +38,11 @@
                             yAxisDelta: 0
                         }
                     },
-                    setCurrentAction: function(evt) {
-                        if (evt === null && currentAction.id !== p.actions.None.id) {
+                    setCurrentAction: function(newCurrentAction) {
+                        if (currentAction.id !== newCurrentAction.id) {
                             myStage.removeChild(currentAction.sprite);
-                            currentAction = p.actions.None;
+                            currentAction = newCurrentAction;
                             myStage.addChild(currentAction.sprite);
-                        } else if (evt !== null){
-                            var keyCode = (evt.originalEvent.which || evt.originalEvent.keyCode);
-                            console.log(keyCode);
-                            if (keyCode !== currentAction.keyCode) {
-                                myStage.removeChild(currentAction.sprite);
-                                if (keyCode === p.actions.MoveUp.keyCode) {
-                                    currentAction = p.actions.MoveUp;
-                                    myStage.addChild(currentAction.sprite);
-                                } else if (keyCode === p.actions.MoveRight.keyCode) {
-                                    currentAction = p.actions.MoveRight;
-                                    myStage.addChild(currentAction.sprite);
-                                } else if (keyCode === p.actions.MoveDown.keyCode) {
-                                    currentAction = p.actions.MoveDown;
-                                    myStage.addChild(currentAction.sprite);
-                                } else if (keyCode === p.actions.MoveLeft.keyCode) {
-                                    currentAction = p.actions.MoveLeft;
-                                    myStage.addChild(currentAction.sprite);
-                                } 
-                            }
                         }
                     },
                     getCurrentAction: function() {
@@ -86,10 +67,10 @@
                                 }
                             });
 
-                        this.actions.MoveUp.sprite = new createjs.Sprite(spriteSheet, "moveUp");
-                        this.actions.MoveRight.sprite = new createjs.Sprite(spriteSheet, "moveRight");
-                        this.actions.MoveDown.sprite = new createjs.Sprite(spriteSheet, "moveDown");
-                        this.actions.MoveLeft.sprite = new createjs.Sprite(spriteSheet, "moveLeft");
+                        this.actions[37].sprite = new createjs.Sprite(spriteSheet, "moveLeft");
+                        this.actions[38].sprite = new createjs.Sprite(spriteSheet, "moveUp");
+                        this.actions[39].sprite = new createjs.Sprite(spriteSheet, "moveRight");
+                        this.actions[40].sprite = new createjs.Sprite(spriteSheet, "moveDown");
                         this.actions.None.sprite = new createjs.Sprite(spriteSheet, "lookDown");
 
                         myStage.addChild(this.actions.None.sprite);
@@ -122,14 +103,22 @@
                             myStage = null;
                         }
                     }
-                }, currentAction = p.actions.None, myStage = null;
+                }, currentAction = p.actions.None, myStage = null, queueKeys = [];
 
                 $(document).on('keydown', function(evt){
-                    p.setCurrentAction(evt);
+                    var keyCode = (evt.originalEvent.which || evt.originalEvent.keyCode).toString();
+                    if (queueKeys.indexOf(keyCode) < 0) {
+                        queueKeys.push(keyCode);
+                        p.setCurrentAction(queueKeys.length ? p.actions[keyCode] : p.actions.None);
+                    }
                 });
 
                 $(document).on('keyup', function(evt){
-                    p.setCurrentAction(null);
+                    var keyCode = (evt.originalEvent.which || evt.originalEvent.keyCode).toString();
+                    queueKeys.remove(function(item){
+                        return keyCode == item;
+                    });
+                    p.setCurrentAction(queueKeys.length ? p.actions[queueKeys[queueKeys.length - 1]] : p.actions.None);
                 });
 
                 return p;

@@ -2,6 +2,35 @@
     var hasNotBeenApplied = true;
     define([], function () {
         if (hasNotBeenApplied) {
+
+            if (!Array.prototype.contains) {
+                Array.prototype.contains = function(callback){
+                    return this.getIndex(callback) > -1;
+                };
+            }
+
+            Array.prototype.getIndex = function(callback){
+                return this.reduce(function(cur, val, index){
+                    if (callback(val, index) && cur === -1) {
+                        return index;
+                    }
+                    return cur;
+                }, -1);
+            };
+            
+            if (!Array.prototype.remove) {
+                Array.prototype.remove = function(callback){
+                    return this.removeAt(this.getIndex(callback));
+                };
+
+                Array.prototype.removeAt = function(idx){
+                    if (idx > -1 && idx < this.length) {
+                        this.splice(idx, 1);
+                        return true;
+                    }
+                    return false;
+                };
+            }
             // Production steps of ECMA-262, Edition 5, 15.4.4.18
             // Reference: http://es5.github.io/#x15.4.4.18
             if (!Array.prototype.forEach) {
