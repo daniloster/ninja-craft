@@ -46,9 +46,12 @@ app.get('/', function(req, res) {
 
 /* SOCKET HANDLERS */
 
-// Broadcast all draw clicks.
-app.io.route('drawClick', function(req) {
-    req.io.broadcast('draw', req.data)
+app.io.route('Client:addPlayer', function(req) {
+    req.io.broadcast('Server:addPlayer', req.data)
+});
+
+app.io.route('Client:refreshPlayer', function(req) {
+    req.io.broadcast('Server:refreshPlayer', req.data)
 });
 
 app.listen(7076);

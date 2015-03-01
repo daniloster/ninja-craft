@@ -1,2 +1,2 @@
-define(['components/common/loading/loading', 'util/array'],
+define(['components/common/loading/loading', 'util/array', 'util/string'],
 function () {});
